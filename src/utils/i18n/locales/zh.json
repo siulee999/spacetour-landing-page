@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "首頁",
+    "explore": "探索",
+    "destination": "目的地"
+  },
+  "hero": {
+    "title": "太空",
+    "subtitle": "你，想去太空旅行嗎？",
+    "action": "探索"
+  },
+  "bento": {
+    "zeroGravitySpa": {
+      "title": "零重力水療",
+      "subtitle": "奢華漂浮體驗",
+      "description": "在軌道上享受無重力按摩與水療。純粹極樂，距離地球400公里。"
+    },
+    "launchSchedule": {
+      "title": "發射時間表",
+      "subtitle": "下次旅程：2026年",
+      "blockStack": [
+        "第二季：月球基地 Alpha",
+        "第三季：火星殖民地 Beta",
+        "第四季：歐羅巴冰雪度假村"
+      ]
+    },
+    "happyTravelers": {
+      "title": "超過100萬快樂旅客",
+      "subtitle": "自2024年起",
+      "description": "太陽系內五星好評。"
+    },
+    "spaceChef": {
+      "title": "太空主廚體驗",
+      "subtitle": "微重力米芝蓮",
+      "description": "在土星軌道上享用3D列印松露意粉。",
+      "maskText": ["風味超越", "地心引力"]
+    },
+    "auroraDeck": {
+      "title": "極光觀景台",
+      "subtitle": "從太空俯瞰地球",
+      "description": "每90分鐘一場360°極光秀。"
+    },
+    "bookNow": {
+      "title": "🎟️ 立即預約",
+      "subtitle": "座位有限",
+      "description": "每次任務僅12名乘客。快搶位！",
+      "cta": "預約座位"
+    }
+  },
+  "destinationTitle": "選擇你的太空目的地",
+  "destinations": {
+    "moon": {
+      "name": "月球",
+      "imgAlt": "月球圖片",
+      "description": "以從未見過的角度欣賞我們的地球。這趟完美的放鬆之旅，能讓你重拾視野，精神煥發地歸來。順道參觀 Luna 2 及 Apollo 11 登陸地點，感受歷史氣息。",
+      "distance": 384400,
+      "travel": "3 日"
+    },
+    "mars": {
+      "name": "火星",
+      "imgAlt": "火星圖片",
+      "description": "記得攜帶行山靴。你將需要它們來挑戰太陽系最高的行星山脈——奧林帕斯山，其高度為珠穆朗瑪峰的兩倍半！",
+      "distance": 225000000,
+      "travel": "9 個月"
+    },
+    "europa": {
+      "name": "歐羅巴",
+      "imgAlt": "歐羅巴圖片",
+      "description": "木星四顆伽利略衛星中最小的一顆歐羅巴，是冬日愛好者的夢想天堂。冰封表面，完美適合滑冰、冰壺、冰球，或者在溫暖的冬日小屋中輕鬆放鬆。",
+      "distance": 628000000,
+      "travel": "3 年"
+    }
+  }
+}

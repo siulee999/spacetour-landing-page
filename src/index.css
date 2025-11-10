@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-accent-1: #d0d6f9;
+  --color-dark-1: #0b0d17;
+  --color-bright-1: #ffffff;
+
+  --font-bellefair: "bellefair", serif;
+  --font-barlow-condensed: "Barlow Condensed", sans-serif;
+
+
+  --animate-marquee: marquee 15s linear infinite;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translatex(-50%)
+    }
+  }
+
+  --animate-star-appear: appear 2s ease-in-out infinite;
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      rotate: 0;
+      transform: translate(0, -100%); 
+    }
+    25% {
+      opacity: 1;
+      rotate: 45;
+      transform: translate(0, 0); 
+    }
+    100% {
+      opacity: 1;
+      rotate: 90deg;
+      transform: translate(0, 0); 
+    }
+  }
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth text-accent-1
+  }
+
+  h1,h2,h3 {
+    @apply text-white
+  }
+
+  button, a {
+    @apply hover:cursor-pointer
+  }
+}
+
+@layer utilities {
+  .section-spacing {
+    @apply px-6 py-10 md:px-10 md:py-16 lg:px-24 lg:py-20 pt-20 md:pt-24 lg:pt-29 
+  }
+
+  // text
+  .text-preset-9 {
+    @apply font-barlow-condensed text-base sm:text-lg leading-[120%] sm:leading-[180%] tracking-wide
+  }
+
+  .text-preset-8 {
+    @apply font-barlow-condensed text-sm sm:text-base tracking-[2px]
+  }
+
+  .text-preset-7 {
+    @apply font-barlow-condensed text-xs sm:text-sm tracking-[2px]
+  }
+
+  .text-preset-6 {
+    @apply font-bellefair text-[1.5rem] sm:text-[1.75rem] tracking-normal
+  }
+
+  .text-preset-5 {
+    @apply font-barlow-condensed text-[1.15rem] sm:text-[1.75rem] tracking-[2px]
+  }
+
+  .text-preset-4 {
+    @apply font-bellefair text-[1.25rem] md:text-[1.75rem] lg:text-[2rem] leading-[36.7%] tracking-normal
+  }
+
+  .text-preset-3 {
+    @apply font-bellefair text-[3rem] sm:text-[3.5rem] leading-[64.2%] tracking-normal
+  }
+
+  .text-preset-2 {
+    @apply font-bellefair text-7xl sm:text-8xl leading-[114.6%] tracking-normal
+  }
+
+  .text-preset-1 {
+    @apply font-bellefair font-extrabold text-8xl sm:text-9xl leading-[172%] tracking-normal
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "destination": "Destination"
+  },
+  "hero": {
+    "title": "Space",
+    "subtitle": "so, you wnat to travel to",
+    "action": "explore"
+  },
+  "bento": {
+    "zeroGravitySpa": {
+      "title": "Zero Gravity Spa",
+      "subtitle": "Float in luxury",
+      "description": "Experience weightless massages and hydrotherapy in orbit. Pure bliss, 400km above Earth."
+    },
+    "launchSchedule": {
+      "title": "Launch Schedule",
+      "subtitle": "Next trip: 2026",
+      "blockStack": [
+        "Q2: Moon Base Alpha",
+        "Q3: Mars Colony Beta",
+        "Q4: Europa Ice Resort"
+      ]
+    },
+    "happyTravelers": {
+      "title": "1M+ Happy Travelers",
+      "subtitle": "Since 2024",
+      "description": "Rated 5 stars across the solar system."
+    },
+    "spaceChef": {
+      "title": "Space Chef Experience",
+      "subtitle": "Michelin in Microgravity",
+      "description": "Dine on 3D-printed truffle pasta while orbiting Saturn.",
+      "maskText": ["FLAVOR", "BEYOND", "GRAVITY"]
+    },
+    "auroraDeck": {
+      "title": "Aurora Viewing Deck",
+      "subtitle": "Earth from above",
+      "description": "Watch the Northern Lights from space — a 360° light show every 90 minutes."
+    },
+    "bookNow": {
+      "title": "🎟️ Book Now",
+      "subtitle": "Limited seats",
+      "description": "Only 12 passengers per mission. Secure your spot before launch.",
+      "cta": "Reserve Seat"
+    }
+  },
+  "destinationTitle": "Pick your destination",
+  "destinations": {
+    "moon": {
+      "name": "Moon",
+      "imgAlt": "Moon pic",
+      "description": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
+      "distance": 384400,
+      "travel": "3 days"
+    },
+    "mars": {
+      "name": "Mars",
+      "imgAlt": "Mars pic",
+      "description": "Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!",
+      "distance": 225000000,
+      "travel": "9 months"
+    },
+    "europa": {
+      "name": "Europa",
+      "imgAlt": "Europa pic",
+      "description": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.",
+      "distance": 628000000,
+      "travel": "3 years"
+    }
+  }
+}
