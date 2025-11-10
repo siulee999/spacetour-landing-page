@@ -20,6 +20,7 @@ const BentoGridItem = ({ item }) => {
     description,
     size,
     bgImg,
+    animateImgSrc,
     cta,
     blockStack,
     maskText,
@@ -75,14 +76,16 @@ const BentoGridItem = ({ item }) => {
           <h3 className="text-preset-5 font-bold text-white">{title}</h3>
           <p className="text-preset-7">{subtitle}</p>
           <p className="text-preset-9 mt-3">{description}</p>
-          <div className="w-10 h-10 mt-4 animate-star-appear">
-            <img
-              aria-hidden="true"
-              alt="star animation"
-              src="/src/assets/explore/star.svg"
-              className="w-full h-full object-contain object-center"
-            />
-          </div>
+          {animateImgSrc && (
+            <div className="w-10 h-10 mt-4 animate-star-appear">
+              <img
+                aria-hidden="true"
+                alt=""
+                src={animateImgSrc}
+                className="w-full h-full object-contain object-center"
+              />
+            </div>
+          )}
         </div>
       )}
 

@@ -20,8 +20,8 @@ const HeroSection = () => {
   });
 
   const buttonY = useTransform(scrollYProgress, [0, 1], ["0%", "-150%"]);
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
-  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "240%"]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], [0, window.innerHeight]);
+  const textY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
     <section

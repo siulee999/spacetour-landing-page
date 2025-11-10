@@ -1,4 +1,5 @@
 import gravityImg from "../assets/explore/bg-gravity.webp";
+import starSvg from "../assets/explore/star.svg";
 import { marsImg, moonImg, europaImg } from "../assets/destination/index.js";
 
 export const navigation = [
@@ -10,7 +11,7 @@ export const navigation = [
 export const explore = [
   { id: "zeroGravitySpa", size: "large", bgImg: gravityImg },
   { id: "launchSchedule", size: "small" },
-  { id: "happyTravelers", size: "small" },
+  { id: "happyTravelers", size: "small", animateImgSrc: starSvg },
   { id: "spaceChef", size: "medium" },
   { id: "auroraDeck", size: "medium" },
   { id: "bookNow", size: "medium" },
@@ -111,7 +112,7 @@ export const collaborations = [
   },
   {
     company: "starbucks",
-    logo: "/collaborations/nasa.svg",
+    logo: "collaborations/nasa.svg",
   },
   {
     company: "redbull",
