@@ -62,7 +62,7 @@ const Header = ({ activeSection }) => {
               </li>
             ))}
 
-            <div className="border-x border-gray-400 px-3 mt-10 lg:mt-0">
+            <div className="border-x border-gray-400 px-3 mt-10 md:mt-0">
               <button
                 className={`${currentLang === "en" ? "hidden" : "block"}`}
                 onClick={() => handleLangChange("en")}

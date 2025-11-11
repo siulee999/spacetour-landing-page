@@ -1,17 +1,11 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useTranslation } from "react-i18next";
-import {
-  mobileBg,
-  tabletBg,
-  desktopBg,
-  mobileM,
-  tabletM,
-  desktopM,
-} from "@/assets/hero/index.js";
+import { heroAssets } from "@/data/index.js";
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  const { mobile, tablet, desktop } = heroAssets;
 
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -20,7 +14,11 @@ const HeroSection = () => {
   });
 
   const buttonY = useTransform(scrollYProgress, [0, 1], ["0%", "-150%"]);
-  const backgroundY = useTransform(scrollYProgress, [0, 1], [0, window.innerHeight]);
+  const backgroundY = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [0, window.innerHeight]
+  );
   const textY = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
@@ -33,16 +31,17 @@ const HeroSection = () => {
       <motion.img
         style={{ y: backgroundY }}
         alt=""
-        src={desktopBg}
-        srcSet={`${mobileBg} 800w, ${tabletBg} 1400w, ${desktopBg} 2000w`}
+        src={desktop.bg}
+        srcSet={`${mobile.bg} 800w, ${tablet.bg} 1400w, ${desktop.bg} 2000w`}
         className="absolute inset-0 w-full h-[110vh] object-cover object-center pointer-events-none will-change-transform backface-hidden transform-gpu translate-z-0"
       />
+
 
       {/* Mountain bg */}
       <img
         alt=""
-        src={desktopM}
-        srcSet={`${mobileM} 800w, ${tabletM} 1400w, ${desktopM} 2000w`}
+        src={desktop.mountain}
+        srcSet={`${mobile.mountain} 800w, ${tablet.mountain} 1400w, ${desktop.mountain} 2000w`}
         className="absolute inset-0 z-20 w-full h-[110vh] object-cover object-center pointer-events-none"
       />
 
